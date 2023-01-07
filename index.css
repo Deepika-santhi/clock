@@ -1,6 +1,94 @@
 
+html,body
+{
+    height: 100%;
+    width: 100%;
+}
+*
+{
+    margin: 0px;
+}
+.wholeContainer
+{
+    height: 100vh;
+    width: 100vw;
+    background: url(assets/desktop/bg-image-daytime.jpg) no-repeat;
+    background-size: 100vw 100vh;
+    overflow: hidden;
+}
+.quoteTimeContainer
+{
+    height: 86%;
+    width: 60%;
+    transform: translateX(14vw);
+    display: inline-block;
+}
+.more{
+    transform: translate(26vw, -19vh);
+    padding: 0px 28px 15px 28px;
+    font-size: 20px;
+    border-radius: 49px;
+    font-weight: bold;
+    color: #676767;
+    border: none;
+}
+.more::after
+{
+    content: url(assets/desktop/icon-arrow-up.svg);
+    transform: rotate(179deg);
+    position: relative;
+    left: 7px;
+    top: 10px;
+}
+.quoteTimeContainer quote{
 
+    height: 50%;
+    width: 100%;
+    float: left;
+    background-color: #00ffff24;
+}
+.quoteTimeContainer timeDiv{
 
+    height: 50%;
+    width: 100%;
+    clear: both;
+    float: left;
+    background-color:#ff424229;
+}
+quote p{
+    display: inline-block;
+    width: 53%;
+    /* background: #ffe4c454; */
+    /* height: 20%; */
+    margin-top: 62px;
+    font-size: 24px;
+    color: white;
+}
+quote button
+{
+    background: transparent;
+    border: none;
+    transform:translate(39px, -33px) scale(1.2);
+}
 
+#countryDetails
+{
+    /* transform: translateY(-2.4rem); */
+    background: white;
+}
 
+.backLight
+{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+
+    background-color: #0000007d;
+}
+.author
+{
+    transform: translateX(200px);
+    margin-top: 20px;
+
+}
 
