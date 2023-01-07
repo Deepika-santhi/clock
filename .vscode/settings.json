@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "liveServer.settings.port": 5502
+=======
+    "liveServer.settings.port": 5506
+>>>>>>> 251ad7a (	new file:   .vscode/settings.json)
 }
