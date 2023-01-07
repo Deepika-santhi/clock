@@ -1,4 +1,3 @@
-//f2b0b8b7de284fb284cf2210dd2412fb
 
 
 
@@ -53,6 +52,30 @@ function getTime()
                         {
                             AmOrPm+=Time[i] 
                         }
+                   let week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+                   for(let a=0;a<week.length;a++)
+                   {
+                    if(date[0]==week[a])
+                    {
+                        console.log("week of the day"+a);
+                    }
+                   }
+
+                   let day=values[4];
+                   day=day.split("-");
+                   console.log(day);
+                   let answer=0;
+                   let month=[31,28,31,30,31,30,31,31,30,31,30,31];
+                   for(let a=1;a<day[1];a++)
+                   {
+                    answer+=Number(month[a]);
+                   }
+                   answer+=Number(day[2]);
+                   if(day[0]%4==0&&day[0]%100!=0||day%400==0)
+                   {
+                    answer+=1;
+                   }
+                   console.log(answer)
                     
                    }
 
