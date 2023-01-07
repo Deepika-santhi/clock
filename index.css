@@ -45,7 +45,7 @@ html,body
     height: 50%;
     width: 100%;
     float: left;
-    background-color: #00ffff24;
+    /* background-color: #00ffff24; */
 }
 .quoteTimeContainer timeDiv{
 
@@ -83,7 +83,7 @@ quote button
     height: 100vh;
     width: 100vw;
 
-    background-color: #0000007d;
+    background-color:#00000052;
 }
 .author
 {
@@ -92,3 +92,22 @@ quote button
 
 }
 
+.wishTime
+{
+    color: white;
+    display: inline-block;
+    font-size: 24px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    margin-left: 15px;
+}
+.wishTime::after
+{
+    content: "  , IT’S CURRENTLY";
+}
+#moonSun
+{
+    display: inline-block;
+    transform: translate(2px,3px);
+
+}
