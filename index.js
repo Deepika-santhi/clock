@@ -35,8 +35,7 @@ function getTime()
                    console.log("Timezone : "+values[1]);
                    console.log("Week Number : "+values[13]);
                    let date=(values[6].split(","));
-                   console.log(date[0]);
-                   let days=[""]
+                   
                    
                     
                 }
