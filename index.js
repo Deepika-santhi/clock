@@ -70,7 +70,7 @@ function getTime()
                    document.getElementById("yearTxt").innerText=values[14];
                    document.getElementById("timeZone2").innerText=values[1];
 
-                   timingFunc(AmOrPm)
+                   timingFunc(AmOrPm,curTime)
 
                    console.log("Timezone : "+values[14]);                    
                 }
@@ -86,10 +86,13 @@ getTime();
 
 
 
-function timingFunc(time)
+function timingFunc(time,curTime)
 {
+    cTime=curTime.split(":")
+    // console.log("cTime : "+cTime[0])
+
     // time="PM"
-    if(time=='AM')
+    if(time=='AM' && cTime[0]<12)
     {
         document.getElementsByClassName("wholeContainer")[0].id="light";
         document.getElementById("light").style.backgroundImage="url('assets/desktop/bg-image-daytime.jpg')";
@@ -98,7 +101,16 @@ function timingFunc(time)
         document.getElementById("countryDetails").style.backgroundImage="radial-gradient(#ffffff,#c6c7c7d1)";
         document.getElementById("countryDetails").style.color="black";
     }
-    else if(time=='PM')
+    else if(time=='PM' && (cTime[0]>=12 || cTime[0]<5))
+    {
+        document.getElementsByClassName("wholeContainer")[0].id="light";
+        document.getElementById("light").style.backgroundImage="url('assets/desktop/bg-image-daytime.jpg')";
+        document.getElementsByClassName("wishTime")[0].innerText="Good Afternoon"
+        document.getElementById("timeImg").setAttribute("src","assets/desktop/icon-sun.svg")
+        document.getElementById("countryDetails").style.backgroundImage="radial-gradient(#ffffff,#c6c7c7d1)";
+        document.getElementById("countryDetails").style.color="black";
+    }
+    else if(time=='PM' && (cTime[0]>=5 && cTime[0]<12))
     {
         document.getElementsByClassName("wholeContainer")[0].id="dark";
         document.getElementById("dark").style.backgroundImage="url('assets/desktop/bg-image-nighttime.jpg')";
