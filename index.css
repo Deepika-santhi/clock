@@ -173,7 +173,7 @@ timeDiv time h2{
     height: 41vh;
     width: 33vw;
     display: inline-block;
-    float: left;
+    /* float: left; */
     margin-top: -2%;
 }
 .timeDetails1 curtimezone,.timeDetails1 year,Day,week
