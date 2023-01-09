@@ -1,76 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-  <script src="index.js"></script>  
-</body>
-<html>
-    <head>
-        <script src="index.js">
-            
-        </script>
-    </head>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8" />
 	<title>Clock App</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="index.css" rel="styleSheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
 </head>
 <body>
 	<div class="backLight">
 
 	</div>
 	<div class="wholeContainer">
+		<div class="div">
+			<div class="quoteTimeContainer">
 
-		<div class="quoteTimeContainer">
+				<quote>
+					<p id="quote">
+						“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”
+					</p> 
+					<button onclick="randomQuote()"><img src="assets/desktop/icon-refresh.svg" id="moonSun"></button>
+					<p class="author">
+						“The science ”
+					</p>
+				</quote>
 
-			<quote>
-				<p>
-					“The science of operations, as derived from mathematics more especially, is a science of itself, and has its own abstract truth and value.”
-				</p> 
-				<button><img src="assets/desktop/icon-refresh.svg" id="moonSun"></button>
-				<p class="author">
-					“The science ”
-				</p>
-			</quote>
+				<timeDiv>
+					<img id="timeImg">
+					<p class="wishTime"></p><br>
+					<time>
+						<h1 id="currentTime"></h1>
+						<p> BST</p>
+						<h2 id="timeZone"></h2>
+					</time>
+				</timeDiv>
 
-			<timeDiv>
-				<img src="assets/desktop/icon-sun.svg">
-				<p class="wishTime">
-					GOOD MORNING
-				</p>
-			</timeDiv>
+			</div>
 
+			<button class="more">MORE<img src="assets/desktop/icon-arrow-up.svg"></button>
+
+			<div id="countryDetails">
+
+				<div class="timeDetails">
+
+					<div class="timeDetails1">
+						<curTimeZone>
+							<p>CURRENT TIMEZONE</p>
+							<h1 id="timeZone2"></h1>
+						</curTimeZone>
+						<year>
+							<p>YEAR</p>
+							<h1 id="yearTxt"></h1>
+						</year>
+					</div>
+
+					<div class="timeDetails2">
+						<Day>
+							<p>DAY</p>
+							<h1 id="day"></h1>
+						</Day>
+						<week>
+							<p>WEEK NUMBER</p>
+							<h1 id="weekNum"></h1>
+						</week>
+					</div>
+				</div>
+			</div>
 		</div>
-
-		<button class="more" >More</button>
-
-		<div id="countryDetails">
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		
-			**⚠️ IMPORTANT ⚠️: Please be sure not to share our design files with anyone else. We include `.gitignore` files in the starter code download to help prevent you from accidentally uploading it to GitHub. Another easy way to prevent this is to keep the design file separate from your codebase.**
-		</div>
-
 
 
 
 
 	</div>
+
+	<script src="animation.js"></script>
+	<script src="index.js"></script>
 </body>
 </html>

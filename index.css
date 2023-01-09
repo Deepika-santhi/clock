@@ -3,6 +3,7 @@ html,body
 {
     height: 100%;
     width: 100%;
+    font-family: sans-serif;
 }
 *
 {
@@ -12,19 +13,21 @@ html,body
 {
     height: 100vh;
     width: 100vw;
-    background: url(assets/desktop/bg-image-daytime.jpg) no-repeat;
+    /* background: url(assets/desktop/bg-image-daytime.jpg) no-repeat; */
     background-size: 100vw 100vh;
     overflow: hidden;
 }
 .quoteTimeContainer
 {
-    height: 86%;
-    width: 60%;
+    /* height: 86%;
+    width: 60%; */
+    height: 99vh;
+    width: 60vw;
     transform: translateX(14vw);
     display: inline-block;
 }
 .more{
-    transform: translate(26vw, -19vh);
+    transform: translate(26vw, -13vh);
     padding: 0px 28px 15px 28px;
     font-size: 20px;
     border-radius: 49px;
@@ -32,14 +35,18 @@ html,body
     color: #676767;
     border: none;
 }
-.more::after
+.more:hover
 {
-    content: url(assets/desktop/icon-arrow-up.svg);
-    transform: rotate(179deg);
+    background-color: #cbcaca;
+}
+.more img
+{
+    transform: rotate(0deg);
     position: relative;
     left: 7px;
     top: 10px;
 }
+
 .quoteTimeContainer quote{
 
     height: 50%;
@@ -48,33 +55,44 @@ html,body
     /* background-color: #00ffff24; */
 }
 .quoteTimeContainer timeDiv{
-
-    height: 50%;
+    height: 37%;
     width: 100%;
     clear: both;
     float: left;
-    background-color:#ff424229;
+    /* background-color: #ff424229; */
+    padding-top: 14%;
 }
 quote p{
     display: inline-block;
-    width: 53%;
+    width: 55%;
     /* background: #ffe4c454; */
     /* height: 20%; */
     margin-top: 62px;
-    font-size: 24px;
+    font-size: 25px;
     color: white;
+}
+quote p:first-child
+{
+
+    padding-top: 39px;
 }
 quote button
 {
-    background: transparent;
+     background: transparent;
     border: none;
-    transform:translate(39px, -33px) scale(1.2);
+    transform: translate(9px, 112px) scale(1.2);
+    margin-left: 21px;
+    position: fixed;
 }
 
 #countryDetails
 {
-    /* transform: translateY(-2.4rem); */
-    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: radial-gradient(#ffffff,#c6c7c7d1);
+    height: 53vh;
 }
 
 .backLight
@@ -83,11 +101,11 @@ quote button
     height: 100vh;
     width: 100vw;
 
-    background-color:#00000052;
+    background-color:#0000006b;
 }
 .author
 {
-    transform: translateX(200px);
+    transform: translateX(363px);
     margin-top: 20px;
 
 }
@@ -110,4 +128,69 @@ quote button
     display: inline-block;
     transform: translate(2px,3px);
 
+}
+.wholeContainer .div{
+    height: 1260px;
+}
+timeDiv time h1{
+    font-size: 218px;
+    color: white;
+    font-family: system-ui;
+    display: inline-block;
+}
+timeDiv time p{
+    font-size: 37px;
+    color: white;
+    font-family: sans-serif;
+    display: inline-block;
+    padding-left: 3%;
+}
+timeDiv time h2{
+    font-size: 30px;
+    color: white;
+    font-family: sans-serif;
+    padding-top: 1%;
+    letter-spacing: 4px;
+}
+.timeDetails
+{
+    height: 40vh;
+    width: 69vw;
+    /* height: 64%;
+    width: 69%; */
+    /* background-color:#ffe4c430; */
+}
+.timeDetails2
+{
+    width: 49%;
+    padding-left: 25px;
+    border-left: 1px solid;
+}
+.timeDetails1,.timeDetails2
+{
+    /* height: 100%;
+    width: 48%; */
+    height: 41vh;
+    width: 33vw;
+    display: inline-block;
+    float: left;
+    margin-top: -2%;
+}
+.timeDetails1 curtimezone,.timeDetails1 year,Day,week
+{
+    height: 30%;
+    width: 100%;
+    display: inline-block;
+    padding-top: 9%;
+    padding-left: 132px;
+}
+.timeDetails1 curtimezone h1, .timeDetails1 year h1,Day h1,week h1
+{
+    font-size: 65px;
+    padding-top: 5px;
+}
+.timeDetails1 curtimezone p,.timeDetails1 year p,Day p,week p
+{
+    letter-spacing: 4px;
+    font-size: 17px;
 }
