@@ -88,7 +88,7 @@ getTime();
 
 function timingFunc(time)
 {
-    // time="PM"
+    time="PM"
     if(time=='AM')
     {
         document.getElementsByClassName("wholeContainer")[0].id="light";
