@@ -161,6 +161,7 @@ $(document).ready(function(){
 
 
 // qoute
+
 const randomquote=function(name){
     fetch(`https://api.api-ninjas.com/v1/quotes?category=${name}`,{
         method:'GET',
@@ -177,13 +178,10 @@ const randomquote=function(name){
        let author=quotes.author
       console.log(sentence);
       console.log(author);
- })
-}
- randomquote("success")
        document.getElementById("quote").innerText=sentence
        document.getElementsByClassName("author")[0].innerText="- "+author
-//  })
-// }
+ })
+}
  randomquote("success")
 
  function randomQuote()
