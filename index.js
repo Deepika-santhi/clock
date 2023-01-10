@@ -36,14 +36,11 @@ function getTime()
                    console.log(dat);
                    let values=Object.values(dat);
                    console.log(values);
-<<<<<<< HEAD
                    console.log("Timezone : "+values[1]);
                    console.log("Week Number : "+values[13]);
                    let date=(values[6].split(","));
                    
                    
-=======
-
                 //    current Time fixing
                    Time=values[11].split("")
                    for(i=0;i<11;i++)
@@ -56,7 +53,6 @@ function getTime()
                         {
                             AmOrPm+=Time[i] 
                         }
->>>>>>> a24e157 (commit)
                     
                    }
 
@@ -81,8 +77,6 @@ function getTime()
     
 }
 getTime();
-<<<<<<< HEAD
-=======
 
 
 
@@ -144,7 +138,6 @@ $(document).ready(function(){
 
 
 // qoute
->>>>>>> a24e157 (commit)
 const randomquote=function(name){
     fetch(`https://api.api-ninjas.com/v1/quotes?category=${name}`,{
         method:'GET',
@@ -159,21 +152,18 @@ const randomquote=function(name){
        let quotes=data[0];
        let sentence=quotes.quote;
        let author=quotes.author
-<<<<<<< HEAD
       console.log(sentence);
       console.log(author);
  })
 }
  randomquote("success")
-=======
        document.getElementById("quote").innerText=sentence
        document.getElementsByClassName("author")[0].innerText="- "+author
- })
-}
+//  })
+// }
  randomquote("success")
 
  function randomQuote()
  {
     randomquote("success")
  }
->>>>>>> a24e157 (commit)
