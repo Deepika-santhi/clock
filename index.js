@@ -163,6 +163,8 @@ $(document).ready(function(){
 // qoute
 
 const randomquote=function(name){
+    document.getElementById("quote").innerText="Loading...."
+    document.getElementsByClassName("author")[0].innerText=""
     fetch(`https://api.api-ninjas.com/v1/quotes?category=${name}`,{
         method:'GET',
         headers:{
